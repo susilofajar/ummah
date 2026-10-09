@@ -101,17 +101,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // WhatsApp CTA
-  // Ganti nomor di bawah dengan nomor resmi UMMAH Tour & Travel.
   const whatsappNumber = "6282113932434";
-  const whatsappMessage = encodeURIComponent(
+  const createWhatsappUrl = (message) =>
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = createWhatsappUrl(
     "Assalamu'alaikum, saya ingin berkonsultasi mengenai program Umrah/Haji UMMAH Tour & Travel."
   );
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   const whatsappCta = document.getElementById("whatsappCta");
   const whatsappText = document.getElementById("whatsappText");
   if (whatsappCta) whatsappCta.href = whatsappUrl;
   if (whatsappText) whatsappText.href = whatsappUrl;
+
+  document.querySelectorAll(".package-cta[data-package]").forEach(link => {
+    const packageName = link.dataset.package;
+    link.href = createWhatsappUrl(
+      `Assalamu'alaikum, saya ingin bertanya tentang ${packageName} di UMMAH Tour & Travel. Mohon informasi jadwal, harga, fasilitas, dan ketentuan program yang tersedia.`
+    );
+    link.target = "_blank";
+    link.rel = "noopener";
+  });
 
   // Current year
   if (year) year.textContent = new Date().getFullYear();

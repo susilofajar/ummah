@@ -1,24 +1,27 @@
-# UMMAH Tour & Travel — Single Page Company Profile
+# UMMAH Tour & Travel — Company Profile
 
-Brand: UMMAH Tour & Travel  
-Legal Entity: PT Ittihad Rihlatul Ummah  
-Direktur Utama: Sulaiman Zuhdi
-Partner Perusahaan UMMAH: HUSSAIN MOHAMMED HIJAZI FOR UMRAH SERVICES
-Nomor Izin PPIU: 15072200393110003
+- **Brand:** UMMAH Tour & Travel
+- **Badan usaha Indonesia:** PT Ittihad Rihlatul Ummah
+- **Direktur Utama:** Sulaiman Zuhdi Lalu
+- **Muassasah mitra di Arab Saudi:** HIJAZI GROUP
+- **Pengelola HIJAZI GROUP:** Hussein Mohammed Hijazi
+- **Nomor Izin PPIU:** 15072200393110003
 
-Layanan pada halaman ini mencakup informasi Umrah dan Haji, manasik,
-pendampingan, konsultasi perjalanan perusahaan/rombongan, serta kebutuhan
-perjalanan lainnya yang dapat didiskusikan dengan tim.
+Halaman ini berisi profil perusahaan, informasi layanan, pilihan awal paket
+Umrah, dan konsultasi informasi perjalanan Haji. Jadwal, harga, hotel,
+maskapai, fasilitas, ketentuan, dan ketersediaan program harus dikonfirmasi
+langsung sebelum pendaftaran atau pembayaran. Untuk layanan Haji, verifikasi
+jenis layanan dan izin penyelenggara melalui kanal resmi pemerintah.
 
 ## Struktur
 
 - `index.html` — halaman utama
-- `style.css` — seluruh styling dan responsive layout
-- `script.js` — interaksi, animasi, counter, FAQ, navigation, WhatsApp CTA
+- `assets/css/style.css` — seluruh styling dan responsive layout
+- `assets/js/script.js` — interaksi, animasi, FAQ, navigasi, dan CTA WhatsApp
 
 ## Menjalankan
 
-Tidak membutuhkan backend.
+Tidak membutuhkan backend atau proses build.
 
 1. Extract folder.
 2. Buka `index.html` di browser.
@@ -26,17 +29,16 @@ Tidak membutuhkan backend.
 
 ## Sebelum production
 
-Ganti data placeholder berikut di `index.html` dan `script.js`:
+Pastikan informasi operasional dan kontak resmi berikut sudah benar dan
+diperbarui sebelum website dipublikasikan:
 
-- Nomor WhatsApp di `script.js`
-- Email perusahaan
-- Alamat final
-- Logo resmi
-- Logo resmi
-- Detail paket, harga, hotel, maskapai, jadwal, dan fasilitas
-- Link media sosial
-- Foto hero/section
+- Nomor WhatsApp di `assets/js/script.js`
+- Status dan rincian izin serta layanan Haji yang benar-benar tersedia
+- Jadwal keberangkatan, harga, hotel, maskapai, fasilitas, dan ketentuan paket
+- Alamat kantor, email, kanal media sosial, dan foto resmi
 
 ## Catatan
 
-Foto demo menggunakan URL Unsplash. Untuk production sebaiknya download dan host aset foto sendiri agar website tidak bergantung pada third-party image hosting.
+Foto latar demo menggunakan URL Unsplash. Untuk production, gunakan aset foto
+resmi yang sudah mendapat izin penggunaan dan host secara mandiri agar website
+tidak bergantung pada layanan gambar pihak ketiga.
