@@ -352,3 +352,37 @@ blockquote em { color: #c4d9d2; font-style: italic; }
   .round-arrow { width: 56px; height: 56px; flex: 0 0 auto; }
   .footer-bottom { flex-direction: column; gap: 8px; }
 }
+
+/* =========================================
+   ADDITIONAL STYLES: GALLERY & ARTICLES
+   ========================================= */
+
+/* Gallery Styles */
+.gallery { background: var(--cream); }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 60px; }
+.gallery-item { background: #fff; box-shadow: 0 10px 30px rgba(20,40,30,.05); transition: transform .3s, box-shadow .3s; }
+.gallery-item:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.gallery-img-wrap { height: 260px; background-size: cover; background-position: center; }
+.gallery-caption { padding: 20px; }
+.gallery-caption strong { display: block; font-family: var(--serif); font-size: 20px; margin-bottom: 4px; }
+.gallery-caption span { font-size: 11px; color: var(--muted); }
+
+/* Articles Styles */
+.articles { background: var(--cream-2); }
+.article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 60px; }
+.article-card { background: #fff; border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(20,40,30,.04); transition: transform .3s, box-shadow .3s; display: flex; flex-direction: column; }
+.article-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.article-img-wrap { height: 220px; background-size: cover; background-position: center; }
+.article-body { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
+.article-date { font-size: 9px; letter-spacing: .15em; color: var(--gold); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+.article-body h3 { font-family: var(--serif); font-size: 22px; margin-bottom: 12px; line-height: 1.25; }
+.article-body p { font-size: 12px; margin-bottom: 20px; flex-grow: 1; }
+.article-body .text-link { margin-top: auto; }
+
+@media (max-width: 1000px) {
+  .gallery-grid, .article-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 780px) {
+  .gallery-grid, .article-grid { grid-template-columns: 1fr; }
+}
